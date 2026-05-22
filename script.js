@@ -1,38 +1,56 @@
-const text = [
-  "Mahasiswa • Creator • Web Learner",
-  "Building something little by little.",
-  "Modern Minimalist Student Creator"
+// ─────────────────────────────────────────
+// TYPING EFFECT
+// ─────────────────────────────────────────
+const typingEl = document.querySelector('.typing');
+
+const phrases = [
+  'Building things from scratch 🛠️',
+  'Learning every single day 📚',
+  'AI-assisted developer 🤖',
+  'Turning ideas into code ✨',
 ];
 
-let count = 0;
-let index = 0;
-let currentText = "";
-let letter = "";
+let phraseIndex = 0;
+let charIndex   = 0;
+let isDeleting  = false;
+let isPaused    = false;
 
-function type(){
+function type() {
+  const current = phrases[phraseIndex];
 
-  if(count === text.length){
-    count = 0;
+  if (isPaused) return;
+
+  if (!isDeleting) {
+    // Typing forward
+    typingEl.textContent = current.slice(0, charIndex + 1);
+    charIndex++;
+
+    if (charIndex === current.length) {
+      // Pause at end before deleting
+      isPaused = true;
+      setTimeout(() => {
+        isPaused = false;
+        isDeleting = true;
+        type();
+      }, 2000);
+      return;
+    }
+    setTimeout(type, 65);
+
+  } else {
+    // Deleting
+    typingEl.textContent = current.slice(0, charIndex - 1);
+    charIndex--;
+
+    if (charIndex === 0) {
+      isDeleting = false;
+      phraseIndex = (phraseIndex + 1) % phrases.length;
+      setTimeout(type, 400);
+      return;
+    }
+    setTimeout(type, 35);
   }
-
-  currentText = text[count];
-
-  letter = currentText.slice(0, ++index);
-
-  document.querySelector(".typing").textContent = letter;
-
-  if(letter.length === currentText.length){
-
-    count++;
-
-    index = 0;
-
-    setTimeout(type, 1500);
-
-  }else{
-    setTimeout(type, 70);
-  }
-
 }
 
-type();
+// Start after slight delay
+setTimeout(type, 800);
