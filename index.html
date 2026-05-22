@@ -1,24 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surat Peringatan</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>irwan | Personal Hub</title>
+
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- ICON -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>PERHATIAN</h1>
-        <p>Mohon untuk membaca dengan teliti setelah menekan tombol di bawah ini.</p>
-        <button id="surpriseButton">Click</button>
-        <div id="surpriseMessage" class="hidden">
-            <p>🎉🎂🎁</p>
-            <p>Selamat ulang tahun yang ke-21</p>
-            <p>Era Duha Kaida Tama</p>
-            <p>Semoga umurnya berkah, ilmunya berkah, dan bisa banggain orang tua.</p>
-            <p>AMIN.....</p>
-        </div>
-    </div>
-    <script src="script.js"></script>
+
+  <!-- BACKGROUND BLUR -->
+  <div class="bg-blur"></div>
+
+  <main class="container">
+
+    <!-- PROFILE -->
+    <section class="profile">
+
+      <img src="profil.jpg" alt="Profile" class="profile-img">
+
+      <h1>irwan</h1>
+
+      <p class="typing"></p>
+
+    </section>
+
+    <!-- LINKS -->
+    <section class="links">
+
+      <a href="https://www.instagram.com/irwan_l_" class="link-card">
+        <i class="fab fa-instagram"></i>
+        Instagram
+      </a>
+
+      <a href="#" class="link-card">
+        <i class="fab fa-tiktok"></i>
+        TikTok
+      </a>
+
+      <a href="https://github.com/Irwanjsh" class="link-card">
+        <i class="fab fa-github"></i>
+        GitHub
+      </a>
+
+      <a href="#" class="link-card">
+        <i class="fas fa-globe"></i>
+        Portfolio
+      </a>
+
+      <a href="https://wa.me/081292465375" class="link-card">
+        <i class="fab fa-whatsapp"></i>
+        WhatsApp
+      </a>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about glass">
+
+      <h2>About Me</h2>
+
+      <p>
+        Sedang belajar membangun sesuatu dari nol.
+        Sedikit demi sedikit, tapi terus berkembang.
+      </p>
+
+    </section>
+
+    <!-- PROJECT -->
+    <section class="projects glass">
+
+      <h2>Project Showcase</h2>
+
+      <div class="project-card">
+        <h3>🌙 Project aplikasi </h3>
+        <p> Membangun aplikasi mobile offline dan online.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>💻 Web Learning Journey</h3>
+        <p>Kumpulan eksperimen belajar HTML, CSS, dan JavaScript.</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Made with ☕ and late nights.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
