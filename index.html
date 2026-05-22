@@ -3,117 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>irwan | Personal Hub</title>
-
   <!-- FONT -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
   <!-- ICON -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- BACKGROUND BLUR -->
   <div class="bg-blur"></div>
+  <div class="bg-blur-2"></div>
 
   <main class="container">
 
     <!-- PROFILE -->
     <section class="profile">
-
-      <img src="profil.jpg" alt="Profile" class="profile-img">
-
+      <div class="profile-img-wrap">
+        <img src="profil.jpg" alt="Foto Irwan" class="profile-img">
+      </div>
       <h1>irwan</h1>
-
       <p class="typing"></p>
-
     </section>
 
     <!-- ABOUT -->
     <section class="about glass">
-
       <h2>About Me</h2>
-
       <p>
         Sedang belajar membangun sesuatu dari nol.
         Sedikit demi sedikit, tapi terus berkembang.
       </p>
 
-      <br>
+      <div class="divider"></div>
+
       <h2>Skills</h2>
-
-        <ul style="margin-top: 8px; padding-left: 20px;">
-            <li>Mengembangkan web & aplikasi dengan memanfaatkan AI untuk mempercepat proses dan belajar struktur kode.</li>
-            <li>Mampu membaca, menyesuaikan, dan men-debug hasil kode dari AI.</li>
-            <li>Pemahaman dasar tentang logika pemrograman dan alur aplikasi.</li>
-        </ul>
-
+      <div class="skill-tags">
+        <span class="tag">AI-Assisted Dev</span>
+        <span class="tag">HTML · CSS · JS</span>
+        <span class="tag">Mobile App</span>
+        <span class="tag">Debugging</span>
+        <span class="tag">App Logic</span>
+        <span class="tag">Code Reading</span>
+      </div>
     </section>
 
     <!-- PROJECT -->
     <section class="projects glass">
-
       <h2>🚀 Work in Progress</h2>
 
       <div class="project-card">
-        <h3>📱 Mobile App Experiment</h3>
-        <p>Membangun aplikasi mobile offline & online — learning in progress.</p>
-        <a href="https://irwanjsh.github.io/project_inprogres/" target="_blank" rel="noopener noreferrer">kunjungin lebih lanjut</a>
+        <div class="project-header">
+          <h3>📱 Mobile App Experiment</h3>
+          <span class="project-status">Active</span>
+        </div>
+        <p>Membangun aplikasi mobile offline &amp; online — learning in progress.</p>
+        <a href="https://irwanjsh.github.io/project_inprogres/" target="_blank" rel="noopener noreferrer" class="project-link">
+          Kunjungi <i class="fas fa-arrow-right"></i>
+        </a>
       </div>
 
       <div class="project-card">
-        <h3>💻 Web Learning Journey</h3>
+        <div class="project-header">
+          <h3>💻 Web Learning Journey</h3>
+          <span class="project-status">Ongoing</span>
+        </div>
         <p>Kumpulan eksperimen belajar HTML, CSS, dan JavaScript.</p>
       </div>
-
     </section>
 
-    <!-- LINKS (SOSIAL MEDIA - DIPINDAH KE BAWAH) -->
+<section class="projects glass">
+    <!-- Temukan saya di : -->
+     <h2>Temukan saya di sini</h2>
+    <!-- SOCIAL LINKS -->
     <section class="links">
-
-      <a href="https://www.instagram.com/irwan_l_" class="link-card">
-        <i class="fab fa-instagram"></i>
-        Instagram
+      <a href="https://www.instagram.com/irwan_l_" class="link-card" target="_blank" rel="noopener noreferrer">
+        <span class="link-icon ig"><i class="fab fa-instagram"></i></span>
+        <span class="link-label">Instagram</span>
+        <i class="fas fa-chevron-right link-arrow"></i>
       </a>
-
       <a href="#" class="link-card">
-        <i class="fab fa-tiktok"></i>
-        TikTok
+        <span class="link-icon tt"><i class="fab fa-tiktok"></i></span>
+        <span class="link-label">TikTok</span>
+        <i class="fas fa-chevron-right link-arrow"></i>
       </a>
-
-      <a href="https://github.com/Irwanjsh" class="link-card">
-        <i class="fab fa-github"></i>
-        GitHub
+      <a href="https://github.com/Irwanjsh" class="link-card" target="_blank" rel="noopener noreferrer">
+        <span class="link-icon gh"><i class="fab fa-github"></i></span>
+        <span class="link-label">GitHub</span>
+        <i class="fas fa-chevron-right link-arrow"></i>
       </a>
-
       <a href="#" class="link-card">
-        <i class="fas fa-globe"></i>
-        Portfolio
+        <span class="link-icon po"><i class="fas fa-globe"></i></span>
+        <span class="link-label">Portfolio</span>
+        <i class="fas fa-chevron-right link-arrow"></i>
       </a>
-
-      <a href="https://wa.me/681292465375" class="link-card">
-        <i class="fab fa-whatsapp"></i>
-        WhatsApp
+      <a href="https://wa.me/681292465375" class="link-card" target="_blank" rel="noopener noreferrer">
+        <span class="link-icon wa"><i class="fab fa-whatsapp"></i></span>
+        <span class="link-label">WhatsApp</span>
+        <i class="fas fa-chevron-right link-arrow"></i>
       </a>
-      
       <a href="#" class="link-card">
-        <i class="fab fa-linkedin"></i>
-        LinkedIn
+        <span class="link-icon li"><i class="fab fa-linkedin"></i></span>
+        <span class="link-label">LinkedIn</span>
+        <i class="fas fa-chevron-right link-arrow"></i>
       </a>
-
       <a href="mailto:irwansyahckp47@gmail.com" class="link-card">
-        <i class="fas fa-envelope"></i>
-        Email
+        <span class="link-icon em"><i class="fas fa-envelope"></i></span>
+        <span class="link-label">Email</span>
+        <i class="fas fa-chevron-right link-arrow"></i>
       </a>
     </section>
-
+</section>
   </main>
 
   <!-- FOOTER -->
@@ -122,6 +123,5 @@
   </footer>
 
   <script src="script.js"></script>
-
 </body>
 </html>
